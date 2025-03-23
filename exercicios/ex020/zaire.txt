@@ -1,0 +1,11 @@
+caixa, ok?
+
+borda é border
+
+distancia entre o conteudo e a borda é o padding
+
+height e width a gente sabe 
+
+entre a borda e o exterior é a margin
+
+borda da borda é o outline

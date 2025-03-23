@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+  font-family: Android;
+  src: url(../fontes/idroid.otf) format('opentype');
+}
+
+:root {
+    --cor0: #fff6c2;
+    --cor1: #92e7b8;
+    --cor2: #3ddcb4;
+    --cor3: #37c065;
+    --cor4: #31a052;
+    --cor5: #245238;
+    --cor6: #153021;
+    --corborda: rgb(0, 0, 0);
+
+    --fonte-padrao: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Ubuntu', cursive;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header {
+    background-color: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+    border: 2px solid var(--corborda);
+    margin: 5px;
+    margin-bottom: 0%;
+}
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 1px 1px 1px black;
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5em;
+}
+main {
+    min-width: 350px;
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid var(--corborda);
+}
+main h1, h2 {
+    color: white;
+    font-family: var(--fonte-android);
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 2px;
+    border: 2px solid var(--corborda);
+    text-shadow: 1px 1px 1px black;
+}
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+main p {
+    font-family: var(--fonte-padrao);
+    text-indent: 15px;
+    margin: 12px 0px;
+}
+main a {
+    color: rgb(25, 236, 155);
+}
+main a:hover {
+    color: rgb(134, 255, 209);
+}
+main strong {
+    color: var(--cor4);
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+footer a {
+    color: var(--cor5);
+    text-decoration: none;
+    background-color: var(--cor3);
+    padding: 2px;
+}
+footer a:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: var(--cor5);
+    margin: 5px;
+    margin-top: 0%;
+    border: 2px solid var(--corborda);
+    border-top: 0;
+    text-align: center;
+    padding: 5px;
+}
+nav > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.5s;
+}
+nav > p {
+    text-shadow: 2px black;
+}
+aside ul {
+    margin-left: 15px;
+    columns: 2;
+    list-style-position: inside;
+}
+aside {
+    background-color: var(--cor1);
+    border: 2px solid var(--corborda);
+    margin: 5px;
+    padding: 5px;
+}
+aside a {
+    color: white;
+    font-weight: bolder;
+}
+aside a:hover {
+    color: #fff6c2;
+}
+aside h3 {
+    color: white;
+    background-color: var(--cor4);
+    text-shadow: 1px 1px 1px black;
+    margin: 2px -2px 2px -2px;
+    border: 2px solid black;
+    padding: 2px;
+}
+a.externo::after {
+    content: '\1F517'
+
+}
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 90%;
+}
+div.video > iframe {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

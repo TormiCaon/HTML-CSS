@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <hr>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="imagens/m.jpg" type="image/jpeg">
+    <img src="imagens/g.jpg" alt="Grande">
+    </picture>
+    <hr>
+    <h1>Reproduzindo áudio</h1>
+    <p>Jeito 1</p>
+    <audio src="midia/happy-mistake.mp3" controls></audio> <!--MP3, WAV e OGG-->
+    <p>Jeito 2</p>
+    <audio controls> 
+        <source src="midia/happy-mistake.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
